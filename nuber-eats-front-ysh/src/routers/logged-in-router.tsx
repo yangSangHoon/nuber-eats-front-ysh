@@ -6,8 +6,12 @@ import { useMe } from "../hooks/useMe";
 import { NotFound } from "../pages/404";
 import { Restaurants } from "../pages/client/restaurants";
 import { Login } from "../pages/login";
+import { ConfirmEmail } from "../pages/user/confirm-email";
 
-const ClientRoutes = [<Route path="/" element={<Restaurants />}></Route>];
+const ClientRoutes = [
+  <Route key={2} path="/" element={<Restaurants />} />,
+  <Route key={2} path="/confirm" element={<ConfirmEmail />} />,
+];
 
 export const LoggedInRouter = () => {
   const { data, loading, error } = useMe();
