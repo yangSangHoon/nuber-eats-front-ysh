@@ -7,10 +7,12 @@ import { NotFound } from "../pages/404";
 import { Restaurants } from "../pages/client/restaurants";
 import { Login } from "../pages/login";
 import { ConfirmEmail } from "../pages/user/confirm-email";
+import { EditProfile } from "../pages/user/edit-profile";
 
 const ClientRoutes = [
   <Route key={2} path="/" element={<Restaurants />} />,
   <Route key={2} path="/confirm" element={<ConfirmEmail />} />,
+  <Route key={3} path="/edit-profile" element={<EditProfile />} />,
 ];
 
 export const LoggedInRouter = () => {
